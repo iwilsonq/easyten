@@ -1,55 +1,69 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { TabNavigator, StackNavigator } from 'react-navigation';
-import { Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-const HomeScreen = ({ navigation }) => (
-	<View>
-		<Text>Home Screen</Text>
-		<Button
-			onPress={() => navigation.navigate('Details')}
-			title="Go to details"
-		/>
-	</View>
-);
+import theme from './styles';
+import HomeScreen from '../screens/Home';
+import RunScreen from '../screens/Run';
+import MessageScreen from '../screens/Message';
 
-const DetailsScreen = ({ navigation }) => (
-	<View>
-		<Text>Details Screen</Text>
-		<Button
-			onPress={() => navigation.navigate('Home')}
-			title="Go to home"
-		/>
-	</View>
-);
-
-const RootNavigator = TabNavigator({
+export const routeConfigMap = {
 	Home: {
 		screen: HomeScreen,
 		navigationOptions: {
 			tabBarLabel: 'Home',
 			tabBarIcon: ({ tintColor, focused }) => (
-				<Ionicons
-					name={focused ? 'ios-home' : 'ios-home-outline'}
+				<MaterialCommunityIcons
+					name="home"
 					size={26}
 					style={{ color: tintColor }}
 				/>
 			)
 		}
 	},
-	Details: {
-		screen: DetailsScreen,
+	Run: {
+		screen: RunScreen,
 		navigationOptions: {
-			tabBarLabel: 'Details',
+			tabBarLabel: 'Run',
 			tabBarIcon: ({ tintColor, focused }) => (
-				<Ionicons
-					name={focused ? 'ios-person' : 'ios-person-outline'}
+				<MaterialCommunityIcons
+					name="run"
+					size={26}
+					style={{ color: tintColor }}
+				/>
+			)
+		}
+	},
+	Message: {
+		screen: MessageScreen,
+		navigationOptions: {
+			tabBarLabel: 'Messages',
+			tabBarIcon: ({ tintColor, focused }) => (
+				<MaterialCommunityIcons
+					name="email"
 					size={26}
 					style={{ color: tintColor }}
 				/>
 			)
 		}
 	}
-});
+};
+
+const tabNavigatorConfig = {
+	tabBarOptions: {
+		activeTintColor: theme.white,
+		activeBackgroundColor: theme.secondary[1],
+		inactiveTintColor: theme.grey,
+		labelStyle: {
+			fontSize: 12
+		},
+		style: {
+			backgroundColor: theme.primary
+		}
+	}
+};
+
+const RootNavigator = TabNavigator(routeConfigMap, tabNavigatorConfig);
 
 export default RootNavigator;

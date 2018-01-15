@@ -3,7 +3,7 @@ import { View, Text, Button } from 'react-native';
 import { TabNavigator, StackNavigator } from 'react-navigation';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-import theme from './styles';
+import theme from './theme';
 import HomeScreen from '../screens/Home';
 import RunScreen from '../screens/Run';
 import MessageScreen from '../screens/Message';

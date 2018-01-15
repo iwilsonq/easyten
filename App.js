@@ -1,21 +1,19 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import theme from './app/config/theme';
 import RootNavigator from './app/config/routes';
+
+const styles = {
+	flex: 1,
+	backgroundColor: theme.primary
+};
 
 export default class App extends React.Component {
 	render() {
 		return (
-			<View style={styles.container}>
-				<RootNavigator />
-			</View>
+			// <SafeAreaView styles={styles}>
+			<RootNavigator />
+			// </SafeAreaView>
 		);
 	}
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#fff',
-		marginTop: 32
-	}
-});

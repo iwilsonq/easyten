@@ -1,16 +1,32 @@
-import React from 'react';
-import { View, Text, Button } from 'react-native';
+import React, { Component } from 'react';
+import { SafeAreaView, StatusBar } from 'react-native';
 import { TabNavigator, StackNavigator } from 'react-navigation';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-import theme from './theme';
+import { theme, safearea } from './theme';
 import HomeScreen from '../screens/Home';
 import RunScreen from '../screens/Run';
 import MessageScreen from '../screens/Message';
 
+function layout(Screen) {
+	return class extends Component {
+		render() {
+			return (
+				<SafeAreaView style={safearea}>
+					<StatusBar
+						backgroundColor="blue"
+						barStyle="light-content"
+					/>
+					<Screen {...this.props} />
+				</SafeAreaView>
+			);
+		}
+	};
+}
+
 export const routeConfigMap = {
 	Home: {
-		screen: HomeScreen,
+		screen: layout(HomeScreen),
 		navigationOptions: {
 			tabBarLabel: 'Home',
 			tabBarIcon: ({ tintColor, focused }) => (
@@ -23,7 +39,7 @@ export const routeConfigMap = {
 		}
 	},
 	Run: {
-		screen: RunScreen,
+		screen: layout(RunScreen),
 		navigationOptions: {
 			tabBarLabel: 'Run',
 			tabBarIcon: ({ tintColor, focused }) => (
@@ -36,7 +52,7 @@ export const routeConfigMap = {
 		}
 	},
 	Message: {
-		screen: MessageScreen,
+		screen: layout(MessageScreen),
 		navigationOptions: {
 			tabBarLabel: 'Messages',
 			tabBarIcon: ({ tintColor, focused }) => (

@@ -33,3 +33,7 @@ for higher order logic, and config for settings and route configuration.
 Styles are kept separate from their components in order to make decomposing components easier.
 
 For more info check out this [https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0](article) on structuring a React Native project.
+
+## Inspiration
+
+[https://dribbble.com/shots/3559500-Sport-App-Exploration](Sport App Exploration)

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { SafeAreaView, StatusBar } from 'react-native';
+import { SafeAreaView, StatusBar, Text } from 'react-native';
 import { TabNavigator, StackNavigator } from 'react-navigation';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo';
 
 import { theme, safearea } from './theme';
 import HomeScreen from '../screens/Home';
@@ -13,11 +14,22 @@ function layout(Screen) {
 		render() {
 			return (
 				<SafeAreaView style={safearea}>
-					<StatusBar
-						backgroundColor="blue"
-						barStyle="light-content"
-					/>
-					<Screen {...this.props} />
+					<LinearGradient
+						colors={['#282a2f', '#423135', '#282a2f']}
+						style={{
+							height: '100%',
+							width: '100%',
+							padding: 15,
+							alignItems: 'center',
+							borderRadius: 5
+						}}
+					>
+						<StatusBar
+							backgroundColor="blue"
+							barStyle="light-content"
+						/>
+						<Screen {...this.props} />
+					</LinearGradient>
 				</SafeAreaView>
 			);
 		}

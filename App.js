@@ -11,7 +11,8 @@ export default class App extends React.Component {
 	async componentDidMount() {
 		await Font.loadAsync({
 			'montserrat-regular': require('./assets/fonts/Montserrat-Regular.ttf'),
-			'montserrat-semibold': require('./assets/fonts/Montserrat-SemiBold.ttf')
+			'montserrat-semibold': require('./assets/fonts/Montserrat-SemiBold.ttf'),
+			bangers: require('./assets/fonts/Bangers-Regular.ttf')
 		});
 
 		this.setState({ appLoading: false });

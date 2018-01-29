@@ -3,11 +3,13 @@ const theme = {
 	secondary: ['#cf3a5e', '#eb456b'],
 	tertiary: '#f8937c',
 	white: '#dededf',
+	trueWhite: '#fff',
 	grey: '#9e9ea0',
+	cardBg: '#32343a',
 	fontSizes: {
-		sm: 14,
-		md: 16,
-		lg: 18
+		sm: 16,
+		md: 18,
+		lg: 21
 	}
 };
 
@@ -15,14 +17,16 @@ const typography = {
 	header: {
 		fontFamily: 'montserrat-semibold',
 		fontSize: theme.fontSizes.lg,
-		color: theme.white,
+		color: theme.trueWhite,
 		fontWeight: '600',
-		paddingBottom: 8
+		paddingBottom: 8,
+		backgroundColor: 'transparent'
 	},
 	body: {
 		fontFamily: 'montserrat-regular',
 		fontSize: theme.fontSizes.sm,
-		color: theme.white
+		color: theme.white,
+		backgroundColor: 'transparent'
 	}
 };
 

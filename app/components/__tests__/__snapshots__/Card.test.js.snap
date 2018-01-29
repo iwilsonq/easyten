@@ -1,11 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateHeader renders properly 1`] = `
-<View>
+exports[`Card renders properly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#32343a",
+        "borderRadius": 4,
+        "margin": 10,
+        "padding": 16,
+      },
+    ]
+  }
+>
   <Text
     accessible={true}
     allowFontScaling={true}
-    centered={true}
     ellipsizeMode="tail"
     style={
       Array [
@@ -16,18 +26,14 @@ exports[`DateHeader renders properly 1`] = `
           "fontWeight": "600",
           "paddingBottom": 8,
         },
-        Object {
-          "textAlign": "center",
-        },
       ]
     }
   >
-    Today
+    1:21:13
   </Text>
   <Text
     accessible={true}
     allowFontScaling={true}
-    centered={true}
     ellipsizeMode="tail"
     style={
       Array [
@@ -36,37 +42,10 @@ exports[`DateHeader renders properly 1`] = `
           "fontFamily": "montserrat-regular",
           "fontSize": 14,
         },
-        Object {
-          "textAlign": "center",
-        },
       ]
     }
   >
-    Sunday, January 20, 2018
+    Active Time
   </Text>
-  <View
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "width": "100%",
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#9e9ea0",
-            "height": 1,
-            "marginVertical": 20,
-            "width": 120,
-          },
-        ]
-      }
-    />
-  </View>
 </View>
 `;

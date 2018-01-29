@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home Screen renders 1`] = `
-<View>
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "flex": 1,
+      "justifyContent": "space-between",
+    }
+  }
+>
   <View>
     <Text
       accessible={true}
@@ -43,7 +51,7 @@ exports[`Home Screen renders 1`] = `
         ]
       }
     >
-      Tuesday, January 15, 2018
+      Sunday, January 20, 2018
     </Text>
     <View
       style={
@@ -68,6 +76,212 @@ exports[`Home Screen renders 1`] = `
           ]
         }
       />
+    </View>
+  </View>
+  <View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#32343a",
+              "borderRadius": 4,
+              "margin": 10,
+              "padding": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#dededf",
+                "fontFamily": "montserrat-semibold",
+                "fontSize": 18,
+                "fontWeight": "600",
+                "paddingBottom": 8,
+              },
+            ]
+          }
+        >
+          1:21:13
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#dededf",
+                "fontFamily": "montserrat-regular",
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Active Time
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#32343a",
+              "borderRadius": 4,
+              "margin": 10,
+              "padding": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#dededf",
+                "fontFamily": "montserrat-semibold",
+                "fontSize": 18,
+                "fontWeight": "600",
+                "paddingBottom": 8,
+              },
+            ]
+          }
+        >
+          1:21:13
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#dededf",
+                "fontFamily": "montserrat-regular",
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Active Time
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#32343a",
+              "borderRadius": 4,
+              "margin": 10,
+              "padding": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#dededf",
+                "fontFamily": "montserrat-semibold",
+                "fontSize": 18,
+                "fontWeight": "600",
+                "paddingBottom": 8,
+              },
+            ]
+          }
+        >
+          1:21:13
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#dededf",
+                "fontFamily": "montserrat-regular",
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Active Time
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#32343a",
+              "borderRadius": 4,
+              "margin": 10,
+              "padding": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#dededf",
+                "fontFamily": "montserrat-semibold",
+                "fontSize": 18,
+                "fontWeight": "600",
+                "paddingBottom": 8,
+              },
+            ]
+          }
+        >
+          1:21:13
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": "#dededf",
+                "fontFamily": "montserrat-regular",
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Active Time
+        </Text>
+      </View>
     </View>
   </View>
 </View>
